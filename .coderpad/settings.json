@@ -1,0 +1,6 @@
+{
+  "autograding": {
+    "reports": { "JUNIT": ["result.xml"] },
+    "runCommand": "rm -f result.xml && npm ci && npx vitest run --reporter=junit --outputFile=result.xml"
+  }
+}

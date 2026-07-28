@@ -1,0 +1,88 @@
+.sheet {
+  --border: #d8dce3;
+  --header-bg: #f3f4f6;
+  --selected: #2563eb;
+
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-size: 14px;
+}
+
+.editor-bar {
+  display: flex;
+  align-items: stretch;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.editor-bar:focus-within {
+  border-color: var(--selected);
+  box-shadow: 0 0 0 1px var(--selected);
+}
+
+.editor-address {
+  min-width: 56px;
+  padding: 8px 10px;
+  border-right: 1px solid var(--border);
+  background: var(--header-bg);
+  font-weight: 600;
+  text-align: center;
+}
+
+.editor-input {
+  flex: 1;
+  min-width: 0;
+  padding: 8px 10px;
+  border: none;
+  outline: none;
+  font: inherit;
+  font-family: ui-monospace, monospace;
+  background: transparent;
+}
+
+.grid {
+  overflow: auto;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: #fff;
+  outline: none;
+}
+
+.grid table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.grid th,
+.grid td {
+  border: 1px solid var(--border);
+  height: 30px;
+  padding: 0 3px;
+}
+
+.grid th {
+  background: var(--header-bg);
+  font-weight: 600;
+  color: #4b5563;
+  width: 90px;
+}
+
+.grid th.corner,
+.grid th.row-header {
+  width: 44px;
+  min-width: 44px;
+}
+
+.cell {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  cursor: cell;
+  outline: none;
+}
+
+.cell.selected {
+  box-shadow: inset 0 0 0 2px var(--selected);
+}

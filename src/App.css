@@ -1,0 +1,31 @@
+.app-header {
+  margin-bottom: 20px;
+}
+
+.app-header p {
+  margin: 0;
+}
+
+.hints {
+  margin-top: 20px;
+  padding: 12px 16px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--panel);
+  font-size: 14px;
+}
+
+.hints ul {
+  margin: 8px 0 0;
+  padding-left: 20px;
+}
+
+.hints li + li {
+  margin-top: 4px;
+}
+
+.hints code {
+  background: #f1f2f5;
+  border-radius: 3px;
+  padding: 1px 5px;
+}
